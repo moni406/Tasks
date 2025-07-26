@@ -1,13 +1,15 @@
-package JavaOopsTask;
+package service;
 
+import model.Student;
+import service.studentservice;
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BankAccount acc=new BankAccount();
-		acc.deposit(1000);
-		acc.withdraw(300);
-		System.out.println("Remaining balance: RS"+acc.getBalance());
+		Student s=new Student();
+		s.name="Krishna";
+		s.age=18;
+		studentservice ss=new studentservice();
+		ss.printStudent(s);
 	}
-
 }
